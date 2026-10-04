@@ -1,3 +1,5 @@
+import { salvarDados } from "./storage.js";
+
 export function iniciarFormulario() {
     const formulario = document.querySelector("form");
 
@@ -8,6 +10,11 @@ export function iniciarFormulario() {
     formulario.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        console.log("Formulário enviado para processamento.");
+        const dadosFormulario = new FormData(formulario);
+        const dados = Object.fromEntries(dadosFormulario.entries());
+
+        salvarDados("cadastroONG", dados);
+
+        console.log("Dados salvos:", dados);
     });
 }
