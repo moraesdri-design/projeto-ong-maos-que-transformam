@@ -65,6 +65,9 @@ nav a:hover {
    ============================== */
 
 main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
     max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
