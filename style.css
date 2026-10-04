@@ -1,0 +1,134 @@
+/* ==============================
+   DESIGN SYSTEM
+   ONG MÃOS QUE TRANSFORMAM
+   ============================== */
+
+:root {
+    --azul-principal: #1539AA;
+    --azul-secundario: #2563EB;
+    --cinza-claro: #F5F5F5;
+    --branco: #FFFFFF;
+    --lilas: #8B5CF6;
+    --lilas-claro: #EDE9FE;
+    --texto-principal: #333333;
+    --texto-secundario: #666666;
+}
+
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+   ============================== */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: var(--cinza-claro);
+    color: var(--texto-principal);
+}
+
+
+/* ==============================
+   CABEÇALHO
+   ============================== */
+
+header {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    padding: 25px;
+    text-align: center;
+}
+
+
+/* ==============================
+   NAVEGAÇÃO
+   ============================== */
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   CONTEÚDO PRINCIPAL
+   ============================== */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+
+/* ==============================
+   SEÇÕES
+   ============================== */
+
+section {
+    background-color: var(--branco);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: var(--azul-principal);
+}
+
+
+/* ==============================
+   LISTAS
+   ============================== */
+
+ul {
+    line-height: 2;
+}
+
+
+/* ==============================
+   RODAPÉ
+   ============================== */
+
+footer {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* ==============================
+   FORMULÁRIOS
+   ============================== */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
